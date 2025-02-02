@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+/* Topbar */
+.topbar {
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000; /* Ensures the topbar is above other content */
+    border-bottom: 2px solid #FF6600; /* Add border at the bottom of the topbar */
+}
+
+.topbar .title {
+    flex: 1;
+}
+
+.topbar .title h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #8000FF; /* Ensure the title remains purple */
+}
+
+.topbar nav {
+    flex: 3;
+    display: flex;
+    justify-content: flex-start; /* Center the navigation */
+}
+
+.topbar nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* Center the navigation items horizontally */
+}
+
+/* Increase space between navigation items */
+.topbar nav ul li {
+    margin: 0 90px; /* Adjusted margin for more space between buttons */
+}
+
+.topbar nav ul li a {
+    background-color: #FF6600; /* Bright Orange */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px; /* Adjust padding for better fit */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 16px; /* Font size for readability */
+}
+
+.topbar nav ul li a:hover {
+    background-color: #ff4500; /* Darker Orange */
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+    margin-top: 80px; /* Account for the fixed topbar height */
+    text-align: center; /* Center all text in this section */
+    max-width: 1200px; /* Limit content width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style for multi-column text */
+.styled-text {
+    margin: 40px auto; /* Add space around each paragraph */
+    max-width: 600px; /* Limit width for readability */
+    text-align: left; /* Align text to the left for readability */
+    column-gap: 20px; /* Add some space between columns */
+    padding: 20px; /* Add padding inside the border */
+    border: 2px solid #FF6600; /* Add border around paragraphs */
+    border-radius: 5px; /* Optional: Add rounded corners to the border */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Image containers */
+.image-container, .image-container1, .image-container2, .image-container3, .image-container4, .image-container5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-container img, .image-container1 img, .image-container2 img, .image-container3 img, .image-container4 img, .image-container5 img {
+    max-width: 100%; /* Ensure image doesn't overflow */
+    width: auto; /* Let width adjust according to container size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 768px) {
+    .centered-image {
+        max-width: 90%; /* Allow images to be a bit smaller on mobile */
+    }
+}
+
+/* Headline Styles */
+h1, h2, h3, h4, h5, h6 {
+    color: #8000FF; /* Purple color for all headlines */
+}

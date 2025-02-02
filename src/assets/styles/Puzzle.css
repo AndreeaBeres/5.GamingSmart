@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Topbar */
+.topbar {
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+    border-bottom: 2px solid #FF6600;
+}
+
+.topbar .title {
+    flex: 1;
+}
+
+.topbar .title h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #8000FF;
+}
+
+.topbar nav {
+    flex: 3;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.topbar nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.topbar nav ul li {
+    margin: 0 90px;
+}
+
+.topbar nav ul li a {
+    background-color: #FF6600;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.topbar nav ul li a:hover {
+    background-color: #ff4500;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+    margin-top: 80px;
+    text-align: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style for multi-column text */
+.styled-text {
+    margin: 40px auto;
+    max-width: 600px;
+    text-align: left;
+    column-gap: 20px;
+    padding: 20px;
+    border: 2px solid #FF6600;
+    border-radius: 5px;
+}
+
+/* Image containers */
+.image-container, .image-container1, .image-container2, .image-container3, .image-container4, .image-container5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-container img, .image-container1 img, .image-container2 img, .image-container3 img, .image-container4 img, .image-container5 img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .centered-image {
+        max-width: 90%;
+    }
+}
+
+/* Headline Styles */
+h1, h2, h3, h4, h5, h6 {
+    color: #8000FF;
+}
